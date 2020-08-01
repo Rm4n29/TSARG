@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>The Spot ARG</title>
+  <meta name="author" content="name">
+  <meta name="description" content="description here">
+  <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+  <style>
+    .ascii-art {
+    font-family: "Lucida Console", Monaco, monospace;
+    white-space: pre;
+    }
+    .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    }
+    .container {
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    text-align:center;
+    color:#ffd000;
+    }
+    .gcontainer {
+    display: inline-block;
+    }
+
+    .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 80px);
+    grid-template-rows: repeat(5, 80px);
+    grid-gap: 5px;
+    }
+
+    .cell {
+   /* center the cell content */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 18px;
+    color: #ffd000;
+    animation: .8s shake infinite;
+    }
+    @keyframes shake {
+  0% { transform: skewX(-30deg); }
+  5% { transform: skewX(30deg); }
+  10% { transform: skewX(-30deg); }
+  15% { transform: skewX(30deg); }
+  20% { transform: skewX(0deg); }
+  100% { transform: skewX(0deg); }  
+}
+  </style>
+  </head>
+  <body style="background-color: #080808;">
+    <!-- <div class="container">
+        <div class="ascii-art center">
+ _____ _   _ _____ ____  ____   ___ _____  _    ____   ____ 
+|_   _| | | | ____/ ___||  _ \ / _ \_   _|/ \  |  _ \ / ___|
+  | | | |_| |  _| \___ \| |_) | | | || | / _ \ | |_) | |  _ 
+  | | |  _  | |___ ___) |  __/| |_| || |/ ___ \|  _ <| |_| |
+  |_| |_| |_|_____|____/|_|    \___/ |_/_/   \_\_| \_\\____|
+
+54 48 45 20 53 50 4f 54 20 41 52 47
+        </div> -->
+        <div class="center">
+          <div class="gcontainer">
+            <div class="grid">
+              <div class="cell" id="1">1</div>
+              <div class="cell" id="2">2</div>
+              <div class="cell" id="3">3</div>
+              <div class="cell" id="4">4</div>
+              <div class="cell" id="5">5</div>
+              <div class="cell" id="6">6</div>
+              <div class="cell" id="7">7</div>
+              <div class="cell" id="8">8</div>
+              <div class="cell" id="9">9</div>
+              <div class="cell" id="10">10</div>
+              <div class="cell" id="11">11</div>
+              <div class="cell" id="12">12</div>
+              <div class="cell" id="13">13</div>
+              <div class="cell" id="14">14</div>
+              <div class="cell" id="15">15</div>
+              <div class="cell" id="16">16</div>
+              <div class="cell" id="17">17</div>
+              <div class="cell" id="18">18</div>
+              <div class="cell" id="19">19</div>
+              <div class="cell" id="20">20</div>
+              <div class="cell" id="21">21</div>
+              <div class="cell" id="22">22</div>
+              <div class="cell" id="23">23</div>
+              <div class="cell" id="24">24</div>
+              <div class="cell" id="25">25</div>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+  </body>
+</html>
